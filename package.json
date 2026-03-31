@@ -1,0 +1,17 @@
+{
+  "name": "naseerbasra-fullstack-site",
+  "version": "1.0.0",
+  "description": "A full-stack website with a Node.js API and interactive frontend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "full-stack",
+    "website",
+    "node"
+  ],
+  "author": "Naseer Basra",
+  "license": "MIT"
+}

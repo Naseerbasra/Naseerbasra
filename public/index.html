@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naseer Basra | Full-Stack Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Naseer Basra</h1>
+      <p>Data Visualization Enthusiast building full-stack experiences.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>About</h2>
+        <p>
+          Welcome to this full-stack website. The frontend is built with HTML/CSS/JavaScript and the backend is powered by Node.js + Express with a REST API.
+        </p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contact Form (Stored by API)</h2>
+        <form id="message-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+          <p id="form-status" class="status"></p>
+        </form>
+      </section>
+
+      <section class="card">
+        <div class="messages-header">
+          <h2>Recent Messages</h2>
+          <button id="refresh-btn" type="button">Refresh</button>
+        </div>
+        <ul id="messages-list" class="messages-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Naseer Basra</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
